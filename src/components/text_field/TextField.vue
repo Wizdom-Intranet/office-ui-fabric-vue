@@ -35,10 +35,10 @@
       label: String,
       placeholder: String,
       inputType: {
-        type: String,
+        type: [String, Number],
         default: 'text',
         validator(value) {
-          return ['text', 'password', 'file'].includes(value);
+          return ['text', 'password', 'file', 'number', 'email', 'date', 'tel', 'url'].includes(value);
         }
       }
     },
