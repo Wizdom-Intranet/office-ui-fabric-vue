@@ -31,14 +31,14 @@
     mixins: [type('multiline', 'underlined'), disabled],
 
     props: {
-      value: String,
+      value: [String, Number],
       label: String,
       placeholder: String,
       inputType: {
-        type: [String, Number],
+        type: String,
         default: 'text',
         validator(value) {
-          return ['text', 'password', 'file', 'number', 'email', 'date', 'tel', 'url'].includes(value);
+          return ['text', 'password', 'file', 'number'].includes(value);
         }
       }
     },
