@@ -13,6 +13,7 @@ module.exports = {
     "no-param-reassign": "off",
     "consistent-return": "off",
     "default-case": "off",
+    "linebreak-style":"off",
     "no-unused-expressions": ["error", { "allowTernary": true }]
   },
   "plugins": [
